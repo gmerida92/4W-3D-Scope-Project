@@ -12,8 +12,8 @@ Examples:
 
 // your code here!
 
-let arrowGetFullName = (person) => {
-  const key = person.firstName + " " + person.lastName;
+const arrowGetFullName = (person) => {
+  let key = person.firstName + " " + person.lastName;
   return key;
 };
 
