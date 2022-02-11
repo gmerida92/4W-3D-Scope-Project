@@ -1,6 +1,6 @@
 /***********************************************************************
 Let's practice writing closures by creating a function named `sandwichMaker()`.
-This function will return another function that will accept a string to add 
+This function will return another function that will accept a string to add
 to the sandwich order (which will start off with a default "tomato" ingredient),
 separating each incoming ingredient with "and".
 
@@ -17,7 +17,16 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 
-// your code here!
+let sandwichMaker = () => {
+  let ingredient = "One sandwich with tomato";
+
+  function addIngredient (str) {
+    return ingredient = ingredient + " and " + str;
+  }
+
+  return addIngredient;
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
